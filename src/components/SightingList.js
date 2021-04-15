@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Card } from "semantic-ui-react";
 import AddSighting from "./AddSighting";
 import SightingCard from "./SightingCard";
 
@@ -19,7 +20,7 @@ function SightingList({ activeBirder }) {
   return (
     <div>
       <AddSighting />
-      {sightingCards}
+      <Card.Group>{sightingCards}</Card.Group>
     </div>
   );
 }
